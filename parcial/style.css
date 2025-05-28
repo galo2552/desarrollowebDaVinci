@@ -15,6 +15,7 @@ nav {
     justify-content: center;
     background-color: #212F3D;
     margin-bottom: 20px;
+    height: 150px;
 }
 
 img {
@@ -37,9 +38,10 @@ header {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     color: #ECF0F1;
+    margin: 0;
 }
 
 h2 {
@@ -101,8 +103,21 @@ li {
     margin: 0;
     padding: 0;
     background-color: #212F3D;
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+#menu li:first-child {
+    position: absolute;
+    left: 40px;
+}
+
+#menu li:not(:first-child) {
+    margin: 0 20px;
 }
 
 #menu li {
@@ -144,8 +159,4 @@ li {
 
 a:hover {
     text-decoration: underline;
-}
-
-.house-ico {
-    width: 100px;
 }
