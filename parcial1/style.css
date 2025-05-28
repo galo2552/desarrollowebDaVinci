@@ -140,3 +140,6 @@ li {
     margin-bottom: 0;
 }
 
+a:hover {
+    text-decoration: underline;
+}
