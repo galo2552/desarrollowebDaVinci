@@ -67,11 +67,19 @@ blockquote {
 .nombre-personaje {
     font-size: 25px;
     font-weight: 600;
-    color: #2e5c89;
+    color: #212F3D;
     margin: 0;
     padding: 0;
     max-width: 200px;
     line-height: 1.2;
+}
+
+.creadores-productores {
+    text-align: center;
+    list-style-position: inside;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #david_shore {
