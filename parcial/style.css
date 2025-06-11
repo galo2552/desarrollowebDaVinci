@@ -15,7 +15,7 @@ nav {
     justify-content: center;
     background-color: #212F3D;
     margin-bottom: 20px;
-    height: 150px;
+    height: 135px;
 }
 
 img {
@@ -76,7 +76,7 @@ footer {
     background-color: #212F3D;
     text-align: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 35px 0;
     margin-top: 40px;
 }
 
@@ -103,12 +103,12 @@ li {
     margin: 0;
     padding: 0;
     background-color: #212F3D;
-    display: flex;
-    align-items: center;
     font-size: 25px;
     width: 100%;
-    justify-content: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu li:first-child {
@@ -120,25 +120,30 @@ li {
     margin: 0 20px;
 }
 
-#menu li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
 .menu-link {
     text-decoration: none;
     color: #ECF0F1;
     font-size: 20px;
     padding: 10px 15px;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: #2C3E50;
+}
+
+.menu-link-titulo {
+    color: #ECF0F1;
+}
+
+.menu-link-titulo:hover {
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    text-decoration: none;
+    
 }
 
 .house {
     width: 600px;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .menu-footer {

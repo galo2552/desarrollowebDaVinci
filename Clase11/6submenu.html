@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Submenu</title>
+    <style>
+        nav {
+            background-color: skyblue;
+            padding: 10px;
+            margin-top: 5%;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline-block;
+            width: 200px;
+            font-size: 2rem;
+        }
+        a	{
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+        }
+        main {
+            background-color: cadetblue;
+            min-height: 100dvh;
+        }
+
+        /* #relativo {
+            position: relative;
+        }
+        #absoluta {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            background-color: azure;
+            padding: 1rem;
+            width: 200px;
+            display: none;
+        }
+        #relativo:hover #absoluta {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Titulo magnifico para un menu con submenu</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#elementoAncla">link1</a>
+                </li>
+                <li id="relativo"><a href="#">Personajes</a>
+                    <ul id="absoluta">
+                        <li><a href="#spiderman">Spiderman</a></li>
+                        <li><a href="#wolverine">Wolverine</a></li>
+                        <li><a href="#deadpool">Deadpool</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+</body>
+
+</html>

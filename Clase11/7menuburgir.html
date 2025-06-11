@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguesa</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: skyblue;
+            height: 10vh;
+        }
+
+        h1 {
+            width: fit-content;
+            padding: 10px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            padding: 2rem;
+        }
+
+        main {
+            background-color: cadetblue;
+            min-height: 100vh;
+        }
+
+        #panelhamburguesa {
+            height: 100vh;
+            width: 400px;
+            position: fixed;
+            top: 10vh;
+            right: -1000px;
+            transition: right .7s ease;
+            background: gray no-repeat url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9a3166f6-c6ad-4d21-a2cd-0bd46a19bf7c/denbfri-0819f292-a11b-4da2-b8d2-7534d456b8ea.jpg/v1/fill/w_1000,h_659,q_75,strp/burgir_by_dothemarioin20second_denbfri-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjU5IiwicGF0aCI6IlwvZlwvOWEzMTY2ZjYtYzZhZC00ZDIxLWEyY2QtMGJkNDZhMTliZjdjXC9kZW5iZnJpLTA4MTlmMjkyLWExMWItNGRhMi1iOGQyLTc1MzRkNDU2YjhlYS5qcGciLCJ3aWR0aCI6Ijw9MTAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IoC_q0KJQCLGKNSO7_PJfz40Bu0oZ2AgiNT23Pgg_WU);
+            background-size: 100% 100%;
+        }
+
+        #panelhamburguesa:target {
+            right: 0;
+        }
+
+        /* Ocultar el botón de cerrar por defecto */
+        #cerrar {
+            display: none;
+        }
+
+        /* Cuando el panel está visible, ocultar el botón de abrir y mostrar el de cerrar */
+        #panelhamburguesa:target ~ header nav #abrir {
+            display: none;
+        }
+
+        #panelhamburguesa:target ~ header nav #cerrar {
+            display: inline-block;
+        }
+        .burgir{
+            display: block;
+            text-align: center;
+            background-color: rgba(247, 157, 41, 0.314);
+            border: 1px solid orange;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="panelhamburguesa">
+        <a href="#" class="burgir">Mc</a>
+        <a href="#" class="burgir">BK</a>
+        <a href="#" class="burgir">Dibu</a>
+        <a href="#" class="burgir">Wdy</a>
+    </div>
+    <header>
+        <h1>Título magnífico(claramente no es lorem) para un menú desplegable</h1>
+        <nav>
+            <a href="#panelhamburguesa" id="abrir">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#e3e3e3">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </a>
+            <a href="#" id="cerrar"> <!-- Cierra el menú -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#e3e3e3">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <!-- Contenido de la página -->
+    </main>
+</body>
+
+</html>
