@@ -30,10 +30,11 @@ h1 {
     font-family: 'Arial', sans-serif;
     font-size: 60px;
     text-shadow: 4px 4px 6px rgba(0,0,0,0.8);
-    margin-left: 20px;
+    margin-left: 120px;
     display: flex;
     flex-grow: 1;
     text-align: center;
+    justify-content: center;
 }
 
 h2 {
@@ -45,6 +46,12 @@ h2 {
     display: flex;
 }
 
+h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 h4 {
     color: #ffffff;
     font-family: 'Arial', sans-serif;
@@ -54,6 +61,16 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -61,6 +78,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+iframe {
+    width: 60%;
+    height: 300px;
 }
 
 .album {
@@ -74,10 +96,9 @@ a:hover {
     font-family: 'Arial', sans-serif;
 }
 
-.title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: bold;
+.listaCanciones {
+    display: flex;
+    justify-content: left;
 }
 
 #panelhamburguesa {
@@ -123,12 +144,16 @@ a:hover {
     pointer-events: auto;
 }
 
-.canciones{
+.cancionesHamburguesa{
     display: block;
     text-align: center;
     background-color: rgba(42, 41, 40, 0.314);
     font-size: 2rem;
     margin-bottom: 40px;
+}
+
+.canciones {
+    font-size: 1.5rem;
 }
 
 .icons {
